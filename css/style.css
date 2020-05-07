@@ -1,0 +1,19 @@
+.container-1{
+width: 75%;
+margin: auto;
+text-align: center;
+
+}
+
+.container-1 select{
+    background-color:  whitesmoke;
+    width: 100px;
+    height: 30px;
+    width: border-box;
+
+}
+.navigation{
+font-family: "Corbel Light";
+    text-transform: capitalize;
+
+}

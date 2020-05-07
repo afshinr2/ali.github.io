@@ -1,0 +1,282 @@
+body{
+  background: #f2f2f2;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+  font-family: 'Julius Sans One', 'Quicksand', sans-serif;
+}
+
+
+
+hr{
+  color: black;
+  background-color: black;
+  height: 5px;
+}
+
+.img-circle{
+  border-radius: 50%;
+  max-height: 400px;
+  padding: 2%;
+  align-items: center;
+}
+
+.container-fluid{
+  padding-bottom: 15px;
+}
+
+.navbar{
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #fff;
+  color: black;
+  /*padding: 1% 0;*/
+  min-height: 55px;
+  font-size: 1.2em;
+  border: 0;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+  color: #fff;
+  background-color: #5e4485;
+}
+
+
+.navbar-inverse .navbar-nav li a, .navbar-inverse .navbar-nav li a:visited {
+  color: #5e4485;
+  transition: all .3s ease-in-out;
+  min-height: 55px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #fff;
+  background: #adadeb;
+
+}
+
+.navbar-brand{
+  text-align: center;
+  color: #adadeb;
+  min-height: 55px;
+  min-width: 10vw;
+}
+
+@media (max-width:1070px) {
+  .navbar-brand{
+    min-width: 107px;
+  }
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: 0px;
+  max-width: 2px;
+}
+
+.navbar-header .logo a{
+  background: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 5px;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+
+.navbar-header .logo a:hover{
+  background: #adadeb;
+  color: white;
+}
+
+.logo{
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+
+
+.btn{
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 22px;
+  background: #5e4485;
+  border: 2px solid #fff;
+}
+
+.btn:hover{
+  color: grey;
+}
+
+.container{
+  margin: 4% auto;
+}
+
+#icon {
+  max-width: 200px;
+  margin: 1% auto;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #8539dc;
+}
+
+footer{
+  width: 100%;
+  background-color: black;
+  padding: 3%;
+  color: #fff;
+  z-index: 9999;
+}
+
+.fa{
+  padding: 15px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.fa:hover{
+  color: #dfdfdf;
+  text-decoration: none;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+th {
+  text-align: center;
+}
+
+
+@media (max-width: 900px) {
+  .fa{
+    font-size: 20px;
+    padding: 10%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .resume-content{
+    display: none;
+  }
+  #icon {
+    max-width: 150px;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-name{
+    display: none;
+  }
+}
+
+/* Collapse Navbar Earlier */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    /*margin: 7.5px -15px;*/
+    margin: 7.5px 50px 7.5px -15px
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+  .collapsing {
+    overflow: hidden!important;
+  }
+}
+
+
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* The duration of the animation */
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}

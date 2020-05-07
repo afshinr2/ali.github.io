@@ -1,0 +1,199 @@
+/* Video */
+.fullscreen-video-wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+    overflow: hidden;
+  z-index: -2;
+}
+
+.fullscreen-video-wrap video{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay{
+  height: 100vh;
+  width: 100vw;
+  max-width:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #5e4485;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+.header-content{
+  text-align: center;
+}
+
+.header-content h1{
+  font-size: 50px;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.header-content p{
+  font-size: 18px;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+/* End of Video */
+
+/* Start of Scrolling Image Background */
+.parallax {
+    /* The image used */
+    background-image: url("../img/img_parallax.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 h1{
+  color: #fff;
+}
+
+/* End of Scrolling Image Background */
+
+
+.white-bg{
+  position: relative;
+}
+
+.white-bg:after{
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5vw;
+  width: 0;
+  height: 0;
+  border-top: solid 5vw #f2f2f2;
+  border-left: solid 5vw transparent;
+  border-right: solid 5vw transparent;
+  z-index: 5;
+}
+
+
+.black-bg{
+  background: #1a1a1a;
+  color: #fff;
+  position:relative;
+}
+
+.black-bg:after{
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5vw;
+  width: 0;
+  height: 0;
+  border-top: solid 5vw #1a1a1a;
+  border-left: solid 5vw transparent;
+  border-right: solid 5vw transparent;
+  z-index: 2;
+}
+
+@media (min-width: 900px) {
+  .black-bg:after{
+    margin-left: -50px;
+    border-top: solid 50px #1a1a1a;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+  }
+  .white-bg:after{
+    margin-left: -50px;
+    border-top: solid 50px #f2f2f2;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+  }
+}
+
+.black-bg a{
+  color: #fff;
+}
+
+.black-bg a:hover{
+  color: grey;
+}
+
+.btn-year1, .btn-year2, .btn-year3, .btn-year4, .btn-year5{
+  width: 100%;
+  background: black;
+  transition: all .3s ease-in-out;
+}
+
+.btn-year1:hover {
+    background-color: #523e75;
+    color: white;
+}
+
+.btn-year2:hover {
+    background-color: #7757a8;
+    color: white;
+}
+
+.btn-year3:hover {
+    background-color: #a089c2;
+    color: white;
+}
+
+.btn-year4:hover {
+    background-color: #c9bcdc;
+    color: white;
+}
+
+.btn-year5:hover {
+    background-color: #e3deed;
+    color: black;
+}
+
+.project-btn img{
+  transition: all .3s ease-in-out;
+  /*
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  */
+}
+
+.project-btn img:hover{
+  filter:invert(100%);
+  background: #5e4485;
+  border-radius: 50%;
+}
+
+
+
+@media (min-width: 734px) {
+  .carousel{
+    padding-bottom: 100px;;
+    background: black;
+  }
+}
+
+.resume-content .row:hover{
+  color: #a089c2;
+}
+
+/*
+.img1, .img2, .img3{
+  transition: filter .3s ease-in-out;
+  color: black;
+}
+
+.img1:hover, .img2:hover, .img3:hover{
+  filter:blur(10px);
+}
+*/
